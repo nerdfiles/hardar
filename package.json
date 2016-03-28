@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/nerdfiles/hardar/issues"
   },
-  "homepage": "https://github.com/nerdfiles/hardar#readme"
+  "homepage": "https://github.com/nerdfiles/hardar#readme",
+  "dependencies": {
+    "web3": "^0.15.3"
+  }
 }
