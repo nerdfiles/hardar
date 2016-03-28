@@ -1,0 +1,39 @@
+<ul id="content">
+  <li
+    id="{{property.id}}"
+    ng-repeat="property in properties"
+    class="property"
+    data-index="{{property.index}}"
+  >
+    <h2>{{title}}</h2>
+    <a
+      ng-href="property.hrefContent"
+      class="content"
+    >Go to Property Listing</a>
+
+    <div class="comments">
+      <div class="comment-count">{{commentCount}}</div>
+      <a
+        ng-href="property.hrefProperty"
+        class="comment"
+        ng-click="addComment($event)"
+      >Comment</a>
+      <textarea ng-model="newComment"></textarea>
+    </div>
+
+    <div id="content-config">
+      <div id="ipfs-status" ng-class="ipfsStatus"></div>
+      <div id="eth-status" ng-class="ethStatus"></div>
+    </div>
+
+    <div class="actions">
+      <a id="addProperty" ng-click="addProperty()">Add Property</a>
+    </div>
+  </li>
+</ul>
+
+<div id="propertyContent-template" ng-show="addPropertyReady">
+  <input type="text" class="title" ng-model="propertyTitle" />
+  <textarea ng-model="propertyContent" class="content"></textarea>
+  <button ng-click="submitProperty()">Submit</button>
+</div>

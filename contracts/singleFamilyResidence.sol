@@ -14,9 +14,7 @@ contract SingleFamilyResidence is owned {
 
     event Post(bytes32 rootHash, bytes32 propertyHash);
 
-    modifier costs {
-      if (msg.value >= price) _
-    }
+    modifier costs { if (msg.value >= price) _ }
 
     function residence( bytes32 rootPropertyHash, bytes32 residence, address OP, bool tip ) costs {
         address realtor = msg.sender;
