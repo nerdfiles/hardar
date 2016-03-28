@@ -1,0 +1,22 @@
+{
+  "name": "hardar",
+  "version": "0.0.1",
+  "description": "HAR.com DAOs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nerdfiles/hardar.git"
+  },
+  "keywords": [
+    "eth"
+  ],
+  "author": "nerdfiles <hello@nerdfiles.net>",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/nerdfiles/hardar/issues"
+  },
+  "homepage": "https://github.com/nerdfiles/hardar#readme"
+}
