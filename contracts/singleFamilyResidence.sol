@@ -18,7 +18,7 @@ contract SingleFamilyResidence is owned {
 
     function residence( bytes32 rootPropertyHash, bytes32 residence, address OP, bool tip ) costs {
         address realtor = msg.sender;
-        if (contents[rootPropertyHash].exists && residence != bytes32(0)) {
+        if (properties[rootPropertyHash].exists && residence != bytes32(0)) {
 
             // append to residence
             properties[rootPropertyHash].residences.length++;
